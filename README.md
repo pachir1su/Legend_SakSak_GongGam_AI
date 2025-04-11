@@ -14,14 +14,17 @@ Gemini API를 활용해 만든 공감형 챗봇.
 
 ---
 
-## 📷 데모 스크린샷
-
-| 라이트 모드 | 다크 모드 |
-|-------------|-----------|
-| ![light](screenshots/lightmode.png) | ![dark](screenshots/darkmode.png) |
+프로젝트 구조
+📁 static/
+    ├── main.js
+    └── style.css
+📁 templates/
+    └── index.html
+.env
+server.py
+README.md
 
 ---
-
 ## 🔧 설치 및 실행
 
 ### 1. 환경 설정
