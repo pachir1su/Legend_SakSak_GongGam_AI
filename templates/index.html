@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>학급 진로 활동 - AI 챗봇</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h2>
+      ㄹㅈㄷ 싹싹 공감 AI
+      <button id="toggle-theme">🌙</button>
+    </h2>
+
+    <input id="msg" placeholder="메시지를 입력하세요" />
+    <button onclick="send()">보내기</button>
+    <div id="chatLog"></div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>

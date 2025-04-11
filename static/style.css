@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#toggle-theme {
+  padding: 4px 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #497df0;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 14px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+#chatLog {
+  background-color: #eeeeee;
+  padding: 20px;
+  height: 60vh;
+  overflow-y: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg-bubble {
+  max-width: 60%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  word-break: break-word;
+  white-space: normal;
+  display: inline-block;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #d2e9ff;
+  color: #000;
+  text-align: left;
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #e6e6e6;
+  color: #111;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: #666;
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.dark-mode #chatLog {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .user {
+  background-color: #497df0;
+  color: #ffffff;
+}
+
+.dark-mode .bot {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.loading {
+  font-style: italic;
+  opacity: 0.7;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
