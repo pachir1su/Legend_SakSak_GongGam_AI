@@ -4,6 +4,7 @@ Gemini API를 활용하여 만든 공감형 챗봇.
 
 - Gemini API를 이용해 만든 웹사이트 기본 형식
 - React로 만들면 좋을듯
+- Gemini 프롬포트를 공감 AI에 맞게 수정.
 
 ---
 
