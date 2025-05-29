@@ -3,14 +3,11 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai  # ✅ 올바른 import
 
-# .env에서 API 키 불러오기
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# Google Generative AI 설정
 genai.configure(api_key=GOOGLE_API_KEY)
 
-# ✅ 여기서 모델 선언 (구성과 동시에 생성)
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     system_instruction="""
