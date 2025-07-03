@@ -19,34 +19,6 @@ Gemini API를 활용하여 만든 공감형 챗봇.
 
 ---
 
-## 설치 및 실행
-
-### 1. 환경 설정
-```bash
-git clone https://github.com/pachir1su/Legend_SakSak_GongGam_AI.git
-cd Legend_SakSak_GongGam_AI
-python -m venv venv
-venv\Scripts\activate  # (Windows 기준)
-pip install -r requirements.txt
-```
-
-### 2. 환경 변수 설정
-
-`.env` 파일 생성 후 아래와 같이 작성:
-
-```
-GOOGLE_API_KEY=YOUR_API_KEY
-```
-
-### 3. 실행
-```bash
-python server.py
-```
-
-웹 브라우저에서 `http://127.0.0.1:5000` 접속
-
----
-
 ## 🗂️ 프로젝트 구조
 
 ```
