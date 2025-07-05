@@ -109,3 +109,14 @@ button {
     opacity: 0.2;
   }
 }
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url("/static/food_background_2.jpg");
+  background-size: auto; /* 전체 화면에 맞춤 */
+  background-repeat: no-repeat; /* 반복 없음 */
+  background-position: center; /* 중앙 정렬 */
+  background-attachment: fixed; /* 스크롤 시 배경 고정 */
+  margin: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
