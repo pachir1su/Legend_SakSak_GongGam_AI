@@ -1,16 +1,15 @@
 from flask import Flask, request, jsonify, render_template
 import os
 from dotenv import load_dotenv
-import google.generativeai as genai  # ✅ 올바른 import
+import google.generativeai as genai
 
 # .env에서 API 키 불러오기
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# Google Generative AI 설정
 genai.configure(api_key=GOOGLE_API_KEY)
 
-# ✅ 여기서 모델 선언 (구성과 동시에 생성)
+# 모델 선언
 model = genai.GenerativeModel(
     model_name="gemini-1.5-flash",
     system_instruction="""
@@ -33,7 +32,6 @@ model = genai.GenerativeModel(
 ---
 
 이렇게, 입력한 재료 전부를 무리하게 조합하지 말고, 일상에서 실제로 먹는 요리 이름과 현실적인 설명 위주로 답변하세요.
-
     """
 )
 
